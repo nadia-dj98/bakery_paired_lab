@@ -18,6 +18,10 @@ const CakeForm = ( {addNewRecipe} ) => {
         
     };
 
+    const turnStringToArray = (inputString) => {
+        return inputString.split(',');
+    }
+
     
     return (
     <div>
@@ -34,7 +38,7 @@ const CakeForm = ( {addNewRecipe} ) => {
             <textarea cols="30" rows="1" id="ingredients"
                         
                         placeholder="Your ingredients"
-                        onChange={(event)=> setIngredients(event.target.value)}
+                        onChange={(event)=> setIngredients(turnStringToArray(event.target.value))}
                         value={ingredients}></textarea>
             
             <label htmlFor="rating">Rating:</label>

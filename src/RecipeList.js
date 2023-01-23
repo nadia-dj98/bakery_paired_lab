@@ -9,7 +9,7 @@ const RecipeList = ({cakes}) => {
     //             cakeName: "Tea Loaf",
     //             ingredients: ["eggs", "oil", "dried fruit", "sugar", "self-raising flour", "strong tea"],
     //             rating: 3
-    //         }];
+    //         }]
 
     return (
         <>
